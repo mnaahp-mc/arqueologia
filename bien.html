@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Bien patrimonial | Museo</title>
+
+    <link rel="stylesheet"
+          href="css/estilos.css">
+
+</head>
+
+
+<body>
+
+
+<header class="encabezado">
+
+    <img
+        src="img/logo.png"
+        alt="Logo de la institución"
+        class="logo-header"
+    >
+
+</header>
+
+
+
+<main class="contenedor">
+
+
+    <!-- =====================================
+         SELECCIÓN DE IDIOMA
+    ====================================== -->
+
+    <section
+        id="seleccionIdioma"
+        class="idioma"
+    >
+
+        <h1>
+            Elige tu idioma
+        </h1>
+
+
+        <p>
+            Selecciona el idioma para comenzar
+        </p>
+
+
+        <div class="botones-idioma">
+
+
+            <button
+                onclick="seleccionarIdioma('es')"
+            >
+
+                🇵🇪 Español
+
+            </button>
+
+
+
+            <button
+                onclick="seleccionarIdioma('en')"
+            >
+
+                🇺🇸 English
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         CONTENIDO DE LA PIEZA
+    ====================================== -->
+
+    <section
+        id="contenidoPieza"
+        class="pieza oculto"
+    >
+
+
+        <!-- CAMBIO DE IDIOMA -->
+
+        <div class="barra-idioma">
+
+            <button
+                onclick="seleccionarIdioma('es')"
+            >
+
+                🇵🇪 Español
+
+            </button>
+
+
+            <button
+                onclick="seleccionarIdioma('en')"
+            >
+
+                🇺🇸 English
+
+            </button>
+
+        </div>
+
+
+
+        <!-- IMAGEN -->
+
+        <img
+            id="imagenPieza"
+            class="imagen-pieza"
+            src=""
+            alt=""
+        >
+
+
+
+        <!-- TÍTULO -->
+
+        <h1 id="tituloPieza"></h1>
+
+
+
+        <!-- DATOS -->
+
+        <div
+            id="datosPieza"
+            class="datos-pieza"
+        ></div>
+
+
+
+        <!-- =====================================
+             DESCRIPCIÓN
+        ====================================== -->
+
+        <article class="descripcion">
+
+            <h2 id="tituloDescripcion">
+                Descripción
+            </h2>
+
+
+            <p id="descripcionPieza"></p>
+
+        </article>
+
+
+
+        <!-- =====================================
+             TEXT TO SPEECH
+        ====================================== -->
+
+        <div class="controles-audio">
+
+
+            <button
+                id="btnEscuchar"
+                class="btn-audio"
+                onclick="escucharDescripcion()"
+            >
+
+                🔊 Escuchar descripción
+
+            </button>
+
+
+
+            <button
+                class="btn-detener"
+                onclick="detenerLectura()"
+            >
+
+                ⏹ Detener
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- =====================================
+             CAMBIAR IDIOMA
+        ====================================== -->
+
+        <button
+            class="btn-cambiar"
+            onclick="cambiarIdioma()"
+        >
+
+            🌐 Cambiar idioma
+
+        </button>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         ERROR
+    ====================================== -->
+
+    <section
+        id="error"
+        class="error oculto"
+    >
+
+        <h2>
+            Contenido no encontrado
+        </h2>
+
+
+        <p>
+            No se pudo encontrar la pieza solicitada.
+        </p>
+
+    </section>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        © Museo Nacional de Arqueología,
+        Antropología e Historia del Perú
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================
+     JAVASCRIPT
+====================================== -->
+
+<script src="js/datos.js"></script>
+
+<script src="js/app.js"></script>
+
+
+</body>
+
+</html>
