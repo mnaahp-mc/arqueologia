@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <title>Exposición - Museo</title>
 
-    <title>Bienvenido | Museo</title>
-
-    <link rel="stylesheet"
-          href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
 
     <main class="inicio">
 
-        <!-- LOGO DE LA INSTITUCIÓN -->
-
-        <img
-            src="img/logo.png"
-            alt="Logo de la institución"
+        <img 
+            src="img/logo-museo.png" 
+            alt="Logo del museo"
+            class="logo"
         >
 
+        <h1>Exposición</h1>
 
-        <!-- BIENVENIDA -->
+        <p class="subtitulo">
+            Explora los paneles de la exposición
+        </p>
 
-        <section class="bienvenida">
+        <div class="paneles-grid">
 
-            <h1>
-                Bienvenido
-            </h1>
+            <a href="panel.html?id=1" class="panel-card">
+                <span>01</span>
+                <strong>Panel 1</strong>
+            </a>
 
-            <p class="subtitulo">
-                ¿Estás dispuesto a vivir esta experiencia?
-            </p>
+            <a href="panel.html?id=2" class="panel-card">
+                <span>02</span>
+                <strong>Panel 2</strong>
+            </a>
 
-            <p>
-                Descubre más sobre nuestro patrimonio
-                a través de esta experiencia digital.
-            </p>
+            <a href="panel.html?id=3" class="panel-card">
+                <span>03 DDDDD</span>
+                <strong>Panel 3DDD</strong>
+            </a>
 
+            <a href="panel.html?id=4" class="panel-card">
+                <span>04</span>
+                <strong>Panel 4</strong>
+            </a>
 
-            <button
-                class="boton"
-                onclick="iniciarExperiencia()">
+            <a href="panel.html?id=5" class="panel-card">
+                <span>05</span>
+                <strong>Panel 5</strong>
+            </a>
 
-                COMENZAR
+            <a href="panel.html?id=6" class="panel-card">
+                <span>06</span>
+                <strong>Panel 6</strong>
+            </a>
 
-            </button>
+            <a href="panel.html?id=7" class="panel-card">
+                <span>07</span>
+                <strong>Panel 7</strong>
+            </a>
 
-        </section>
+        </div>
 
     </main>
 
-
-    <!-- JavaScript -->
-
-    <script src="js/app.js"></script>
-
 </body>
-
 </html>

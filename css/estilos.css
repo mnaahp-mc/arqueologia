@@ -1,309 +1,444 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 
 body {
-
-    margin: 0;
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+    font-family: Arial, Helvetica, sans-serif;
     background: #f5f3ef;
-
-    color: #333;
-
+    color: #292929;
+    line-height: 1.6;
 }
 
 
-.contenedor {
+/* ============================= */
+/* HEADER */
+/* ============================= */
 
-    max-width: 700px;
-
-    margin: auto;
-
-    padding: 20px;
-
+.header {
+    width: 100%;
+    background: white;
+    padding: 18px 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
 }
 
 
 /* LOGO */
-
 .logo {
 
     display: block;
-
     max-width: 180px;
-
     max-height: 100px;
-
     margin: 10px auto 25px;
-
     object-fit: contain;
-
 }
 
+/* ============================= */
+/* CONTENEDOR */
+/* ============================= */
 
-/* SELECCIÓN DE IDIOMA */
-
-.idioma {
-
-    text-align: center;
-
-    padding: 30px 15px;
-
-}
-
-
-.idioma h1 {
-
-    font-size: 28px;
-
-    margin-bottom: 10px;
-
-}
-
-
-.idioma p {
-
-    font-size: 17px;
-
-    margin-bottom: 30px;
-
-}
-
-
-.botones-idioma {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 15px;
-
-    max-width: 350px;
-
-    margin: 30px auto;
-
-}
-
-
-.botones-idioma button {
-
-    border: none;
-
-    border-radius: 10px;
-
-    padding: 17px;
-
-    font-size: 18px;
-
-    cursor: pointer;
-
-}
-
-
-/* CONTENIDO */
-
-.contenido {
-
-    text-align: center;
-
-}
-
-
-/* IMAGEN */
-
-.imagen-pieza {
-
-    display: block;
-
+.contenedor {
     width: 100%;
+    max-width: 850px;
+    margin: auto;
+    padding: 30px 20px 50px;
+}
 
-    max-height: 500px;
+/* ============================= */
+/* NUMERO DEL PANEL */
+/* ============================= */
 
-    object-fit: contain;
+.numero-panel {
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #777;
+    margin-bottom: 12px;
+}
 
-    border-radius: 10px;
+/* ============================= */
+/* TITULO */
+/* ============================= */
 
-    margin: 10px auto 25px;
-
+.titulo-panel {
+    font-size: 38px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
 }
 
 
-/* TÍTULO */
+/* ============================= */
+/* IMAGEN */
+/* ============================= */
 
-#tituloPieza {
-
-    font-size: 26px;
-
-    margin-bottom: 10px;
-
-}
-
-
-/* DATOS */
-
-.datos-pieza {
-
-    font-size: 15px;
-
-    opacity: 0.75;
-
-    margin-bottom: 25px;
-
-}
-
-
-/* DESCRIPCIÓN */
-
-.descripcion {
-
-    text-align: left;
-
+.imagen-container {
+    width: 100%;
+    margin-bottom: 35px;
     background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
 
+
+.imagen-panel {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+}
+
+
+/* ============================= */
+/* IDIOMA */
+/* ============================= */
+
+.idioma-section {
+    background: white;
+    border-radius: 12px;
     padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+}
 
-    border-radius: 10px;
 
-    line-height: 1.7;
-
+.idioma-section h2 {
+    text-align: center;
     font-size: 17px;
-
+    margin-bottom: 15px;
 }
 
 
-.descripcion p {
-
-    margin: 0;
-
+.idiomas {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
 }
 
 
+.idioma-btn {
+    border: 1px solid #ccc;
+    background: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+.idioma-btn:hover {
+    background: #f1f1f1;
+}
+
+
+.idioma-btn.activo {
+    background: #292929;
+    color: white;
+    border-color: #292929;
+}
+
+
+/* ============================= */
+/* TEXTO */
+/* ============================= */
+
+.contenido-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+}
+
+
+.texto-panel {
+    font-size: 18px;
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+
+/* ============================= */
 /* AUDIO */
+/* ============================= */
+
+.audio-section {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+}
+
+
+.audio-titulo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+
+.icono-audio {
+    font-size: 35px;
+}
+
+
+.audio-titulo h2 {
+    font-size: 21px;
+}
+
+
+.audio-titulo p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+#audioPanel {
+    width: 100%;
+}
+
 
 .controles-audio {
-
     display: flex;
-
     gap: 10px;
-
-    justify-content: center;
-
-    margin: 25px 0;
-
     flex-wrap: wrap;
-
 }
 
 
-.btn-audio,
-.btn-detener {
-
-    border: none;
-
-    border-radius: 10px;
-
-    padding: 14px 18px;
-
-    font-size: 16px;
-
+.audio-btn {
+    border: 1px solid #ccc;
+    background: white;
+    padding: 12px 18px;
+    border-radius: 8px;
     cursor: pointer;
-
-}
-
-
-.btn-audio {
-
-    background: #333;
-
-    color: white;
-
-}
-
-
-.btn-detener {
-
-    background: #ddd;
-
-    color: #333;
-
-}
-
-
-/* CAMBIAR IDIOMA */
-
-.btn-cambiar {
-
-    border: none;
-
-    background: transparent;
-
-    text-decoration: underline;
-
     font-size: 15px;
+}
 
+
+.audio-btn:hover {
+    background: #f1f1f1;
+}
+
+
+.audio-btn.principal {
+    background: #292929;
+    color: white;
+    border-color: #292929;
+}
+
+
+.audio-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+@media (max-width: 600px) {
+
+    .controles-audio {
+        flex-direction: column;
+    }
+
+    .audio-btn {
+        width: 100%;
+    }
+
+}
+
+
+
+
+/* ============================= */
+/* NAVEGACIÓN */
+/* ============================= */
+
+.navegacion-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.nav-btn {
+    border: none;
+    background: #292929;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
     cursor: pointer;
-
-    margin-top: 10px;
-
+    font-size: 15px;
 }
 
 
-/* OCULTAR */
-
-.oculto {
-
-    display: none;
-
+.nav-btn:hover {
+    opacity: 0.85;
 }
 
 
-/* ERROR */
+.nav-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
 
-.error {
 
+.contador {
+    font-weight: bold;
+    color: #666;
+}
+
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.footer {
     text-align: center;
-
-    padding: 50px 20px;
-
+    padding: 25px 20px;
+    background: #292929;
+    color: white;
+    font-size: 12px;
 }
 
 
-/* CELULARES */
+/* ============================= */
+/* PAGINA INICIO */
+/* ============================= */
 
-@media (max-width: 500px) {
+.inicio {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+.inicio .logo {
+    max-width: 220px;
+    max-height: 100px;
+    margin-bottom: 30px;
+}
+
+
+.inicio h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+
+.subtitulo {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+
+.paneles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+
+.panel-card {
+    text-decoration: none;
+    color: #292929;
+    background: white;
+    padding: 30px 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+    transition: transform 0.2s;
+}
+
+
+.panel-card:hover {
+    transform: translateY(-4px);
+}
+
+
+.panel-card span {
+    display: block;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+
+.panel-card strong {
+    font-size: 18px;
+}
+
+
+/* ============================= */
+/* MOVIL */
+/* ============================= */
+
+@media (max-width: 600px) {
 
     .contenedor {
-
-        padding: 15px;
-
+        padding: 20px 15px 40px;
     }
 
 
-    .idioma h1 {
-
-        font-size: 24px;
-
+    .titulo-panel {
+        font-size: 29px;
     }
 
 
-    #tituloPieza {
-
-        font-size: 22px;
-
+    .texto-panel {
+        font-size: 17px;
     }
 
 
-    .descripcion {
+    .contenido-section {
+        padding: 22px;
+    }
 
-        font-size: 16px;
 
-        padding: 16px;
+    .idiomas {
+        flex-direction: column;
+    }
 
+
+    .idioma-btn {
+        width: 100%;
+    }
+
+
+    .navegacion-panel {
+        flex-wrap: wrap;
+    }
+
+
+    .nav-btn {
+        flex: 1;
+    }
+
+
+    .contador {
+        width: 100%;
+        order: -1;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+
+    .paneles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .inicio h1 {
+        font-size: 32px;
     }
 
 }
