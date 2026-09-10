@@ -506,11 +506,6 @@ function cambiarIdioma(idioma) {
     }
 
 
-    /* Detener lectura actual */
-
-    detenerAudio();
-
-
     idiomaActual = idioma;
 
 
@@ -702,23 +697,48 @@ function leerPanel() {
 
 function actualizarBotonLeer() {
 
-    const boton =
+    const botonLeer =
         document.getElementById("btnLeer");
 
-    if (!boton) {
-        return;
+    const botonDetener =
+        document.getElementById("btnDetener");
+
+
+    /* ================================
+       BOTÓN LEER
+       ================================ */
+
+    if (botonLeer) {
+
+        if (hablando) {
+
+            botonLeer.textContent =
+                idiomaActual === "es"
+                    ? "🔊 Reproduciendo..."
+                    : "🔊 Playing...";
+
+        } else {
+
+            botonLeer.textContent =
+                idiomaActual === "es"
+                    ? "▶️ Escuchar descripción"
+                    : "▶️ Listen to description";
+
+        }
+
     }
 
 
-    if (hablando) {
+    /* ================================
+       BOTÓN DETENER
+       ================================ */
 
-        boton.textContent =
-            "🔊 Reproduciendo...";
+    if (botonDetener) {
 
-    } else {
-
-        boton.textContent =
-            "▶️ Escuchar descripción";
+        botonDetener.textContent =
+            idiomaActual === "es"
+                ? "⏹️ Detener"
+                : "⏹️ Stop";
 
     }
 

@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f5f3ef;
+    background: #f1ead8;
     color: #292929;
     line-height: 1.6;
 }
@@ -28,10 +28,11 @@ body {
 
 /* LOGO */
 .logo {
-
     display: block;
-    max-width: 180px;
-    max-height: 100px;
+    width: auto;
+    max-width: 90%;
+    height: auto;
+    max-height: 120px;
     margin: 10px auto 25px;
     object-fit: contain;
 }
@@ -324,9 +325,12 @@ body {
 
 
 .inicio .logo {
-    max-width: 220px;
-    max-height: 100px;
-    margin-bottom: 30px;
+    width: auto;
+    max-width: min(220px, 85vw);
+    height: auto;
+    max-height: 120px;
+    margin: 0 auto 30px;
+    object-fit: contain;
 }
 
 
