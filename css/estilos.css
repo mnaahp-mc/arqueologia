@@ -37,6 +37,16 @@ body {
     object-fit: contain;
 }
 
+.logo-header {
+    display: block;
+    width: min(220px, 85vw);
+    max-width: 100%;
+    height: auto;
+    max-height: 120px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
 /* ============================= */
 /* CONTENEDOR */
 /* ============================= */
