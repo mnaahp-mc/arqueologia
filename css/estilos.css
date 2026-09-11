@@ -187,6 +187,7 @@ body {
     font-size: 18px;
     line-height: 1.8;
     white-space: pre-line;
+     text-align: justify;
 }
 
 
@@ -423,6 +424,7 @@ body {
 
     .texto-panel {
         font-size: 17px;
+        text-align: justify;
     }
 
 
