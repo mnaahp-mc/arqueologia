@@ -63,7 +63,8 @@ También se cazaban lobos marinos y focas para obtener alimento. Más allá de s
             en: `Thanks to the cold Peruvian Current flowing along Peru's coast, our sea has always provided an extraordinary abundance of fish, mollusks, and crustaceans.
 
 FISH
-The anchovy stands out as the single most consumed fish in our ancestors' diet, eaten here for at least 13,000 years. Fishermen would take advantage of the summer months, when anchovies swam close to shore, catching them with nets. Small but mighty, the anchovy is remarkably nutritious. Another favorite was the bonito, eaten for at least 8,000 years. Averaging around three kilograms, it is an oily, “blue-fleshed” fish — rich in the kind of healthy fats known to help prevent chronic disease.
+The anchovy stands out as the single most consumed fish in our ancestors' diet, eaten here for at least 13,000 years. Fishermen would take advantage of the summer months, when anchovies swam close to shore, catching them with nets. Small but mighty, the anchovy is remarkably nutritious. 
+Another favorite was the bonito, eaten for at least 8,000 years. Averaging around three kilograms, it is an oily, “blue-fleshed” fish — rich in the kind of healthy fats known to help prevent chronic disease.
 
 CRUSTACEANS AND MOLLUSKS
 Shellfish of all kinds were also an important part of the diet, offering high nutritional value. Our ancestors ate a wide variety of clams, mussels, shrimp, and species that, sadly, are slowly disappearing today as a result of human activity and climate change.
@@ -232,7 +233,6 @@ Crops included maize, potato, quinoa, oca, beans, lima beans, sweet potato, and 
 
             LA COSTA DESÉRTICA Y EL FENÓMENO DE EL NIÑO
             El desierto costero ha sido una constante desde los primeros asentamientos humanos en el litoral central y meridional del Perú. Gracias a la fría corriente peruana, este desierto siempre mantuvo cierto grado de humedad y albergó las llamadas «lomas»: esos extraordinarios oasis de niebla que florecen en medio de terrenos áridos. Por su parte, el extremo norte de la costa ofrecía un entorno algo más templado y parcialmente neotropical.
-
             Aun así, al igual que hoy en día, las poblaciones costeras siempre fueron vulnerables a las fuerzas de la naturaleza, especialmente a las alteraciones periódicas provocadas por el fenómeno de El Niño. Las comunidades sufrieron colapsos y se vieron obligadas a reorganizarse repetidamente para hacer frente a estos sucesos.
 
             LA ZONA ALTOANDINA: MILENIOS DE LLUVIAS Y SEQUÍAS
@@ -244,7 +244,6 @@ Crops included maize, potato, quinoa, oca, beans, lima beans, sweet potato, and 
 
             THE DESERT COAST AND THE NIÑO PHENOMENON
             The coastal desert has been a constant presence since the earliest human settlements along Peru's central and southern shores. Thanks to the cold Peruvian Current, this desert was always somewhat humid, dotted with lomas — those remarkable fog oases that bloom in the midst of arid terrain. The far northern coast offered a somewhat milder, partly neotropical environment.
-
             Even so, as happens today, coastal populations were always vulnerable to the forces of nature — above all, the periodic disruption of El Niño. Communities suffered collapses and were forced to reorganize repeatedly in response to these events.
 
             THE HIGHLANDS: MILLENNIA OF RAINS AND DROUGHTS
