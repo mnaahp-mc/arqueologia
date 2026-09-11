@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta 
+        name="viewport" 
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta 
+        name="description" 
+        content="Información digital de la exposición del museo"
+    >
+
+    <title>Exposición - Museo</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <img 
+            src="img/logo.png"
+            alt="Logo del museo"
+            class="logo-header"
+        >
+
+    </header>
+
+
+    <main class="contenedor">
+
+        <!-- SELECTOR DE IDIOMA -->
+
+        <section class="idioma-section">
+            <h2>
+                Idioma / Language
+            </h2>
+            <div class="idiomas">
+
+                <button 
+                    id="btnEspanol"
+                    class="idioma-btn activo"
+                    onclick="cambiarIdioma('es')"
+                >
+                    🇪🇸 Español
+                </button>
+
+                <button 
+                    id="btnIngles"
+                    class="idioma-btn"
+                    onclick="cambiarIdioma('en')"
+                >
+                    🇺🇸 English
+                </button>
+            </div>
+        </section>
+
+
+
+        <!-- TÍTULO -->
+
+        <h1 
+            class="titulo-panel"
+            id="tituloPanel"
+        >
+            Cargando...
+        </h1>
+
+
+        <!-- IMAGEN -->
+
+        <div class="imagen-container">
+
+            <img 
+                id="imagenPanel"
+                src=""
+                alt=""
+                class="imagen-panel"
+            >
+
+        </div>
+
+        <!-- TEXTO -->
+
+        <section class="contenido-section">
+
+            <p 
+                id="textoPanel"
+                class="texto-panel"
+            >
+                Cargando información...
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <p>
+            © Museo Nacional de Arqueología, Antropología e Historia del Perú
+        </p>
+
+    </footer>
+
+
+    <script src="js/paneles.js"></script>
+
+</body>
+
+</html>
